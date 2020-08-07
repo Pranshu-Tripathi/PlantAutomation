@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PlantIot</string>
+    <string name="stop">STOP</string>
+    <string name="start">START</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="statistics">Statistics</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/app_name">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/temp"
+                android:title="@string/temperature"
+                android:icon="@drawable/ic_temperature"
+                >
+            </item>
+            <item
+                android:id="@+id/humidity"
+                android:title="@string/humidity"
+                android:icon="@drawable/ic_humidity"
+                >
+            </item>
+            <item
+                android:id="@+id/stats"
+                android:title="@string/statistics"
+                android:icon="@drawable/ic_analytics"
+                >
+            </item>
+        </group>
+    </item>
+</menu>

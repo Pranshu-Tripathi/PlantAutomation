@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "850474877974",
+    "firebase_url": "https://electronicclient-2ffc7.firebaseio.com",
+    "project_id": "electronicclient-2ffc7",
+    "storage_bucket": "electronicclient-2ffc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850474877974:android:366c77d889f042d74a6137",
+        "android_client_info": {
+          "package_name": "com.example.plantiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850474877974-r70cis6bevf0uufk2n1c993ub5pic264.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.plantiot",
+            "certificate_hash": "45298c8b1f13b69ce75385ba2b8f7b9a5b68358b"
+          }
+        },
+        {
+          "client_id": "850474877974-d7igbsn3slml3kn1veofddv6foo90j9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIX9KG4c6XHCM7HrbVHEYiyY-0PeLn4ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850474877974-d7igbsn3slml3kn1veofddv6foo90j9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,8 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -76,18 +78,30 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        Intent intent;
         switch (menuItem.getItemId()){
             case R.id.temp:
                 Toast.makeText(this, "Temperature Selected", Toast.LENGTH_SHORT).show();
+
                 drawerLayout.closeDrawer(GravityCompat.START);
+
+                intent = new Intent(MainActivity.this,ChartsActivity.class);
+                intent.putExtra("status",1);
+                startActivity(intent);
                 return true;
             case R.id.humidity:
                 Toast.makeText(this, "Humidity Selected", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
+                intent = new Intent(MainActivity.this,ChartsActivity.class);
+                intent.putExtra("status",2);
+                startActivity(intent);
                 return true;
             case R.id.stats:
                 Toast.makeText(this, "Statistics Selected", Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(GravityCompat.START);
+                intent = new Intent(MainActivity.this,ChartsActivity.class);
+                intent.putExtra("status",3);
+                startActivity(intent);
                 return true;
             default:
                 return false;
@@ -119,6 +133,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(MainActivity.this, "Something Went Wrong!", Toast.LENGTH_SHORT).show();
+                Log.i("Data>>>>>>>>>>>>>",databaseError.getMessage());
                 progressBarOnTask.setVisibility(View.INVISIBLE);
             }
         });
